@@ -79,8 +79,8 @@ const server = http.createServer((req, res) => {
     res.end('Rota não encontrada!');
   }
 });
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 server.listen(port, () => {
-  console.log(`Servidor está rodando em http://localhost:${port}/`);
+  console.log(`Servidor está rodando em localhost:${port}`);
 });

@@ -1,0 +1,1 @@
+const pageTitle=document.querySelector("title");pageTitle.textContent="Meu Portfolio";const navLinks=document.querySelectorAll("nav a");navLinks.forEach((e=>{e.addEventListener("click",(()=>{navLinks.forEach((e=>e.classList.remove("active"))),e.classList.add("active")}))}));

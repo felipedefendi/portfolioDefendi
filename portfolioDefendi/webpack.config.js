@@ -17,7 +17,11 @@ module.exports = {
       fs: require.resolve('browserify-fs'),
       path: require.resolve('path-browserify'),
       url: require.resolve('url'),
-      stream: require.resolve('stream-browserify')
+      stream: require.resolve('stream-browserify'),
+      querystring: require.resolve("querystring-es3"),
+      crypto: require.resolve("crypto-browserify"),
+      zlib: require.resolve("browserify-zlib"),
+      assert: require.resolve("assert/")
     },
   },
   module: {
